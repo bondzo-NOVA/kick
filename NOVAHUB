@@ -1,0 +1,145 @@
+
+function base64decode(data)
+    local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+    data = string.gsub(data, '[^'..b..'=]', '')
+    return (data:gsub('.', function(x)
+        if (x == '=') then return '' end
+        local r,f='',(b:find(x)-1)
+        for i=6,1,-1 do r=r..(f%2^i - f%2^(i-1) > 0 and '1' or '0') end
+        return r;
+    end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x)
+        if (#x ~= 8) then return '' end
+        local c=0
+        for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end
+        return string.char(c)
+    end))
+end
+
+
+local MISgZoIFqsI = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local chIYfKost = MISgZoIFqsI:CreateWindow({
+   Name = base64decode("8J+Otk5PVkFIVULwn462"),
+   Icon = 0,
+   LoadingTitle = base64decode("V2VsY29tZSB0byBOT1ZBSFVC"),
+   LoadingSubtitle = base64decode("YnkgYmFuZHpvL2tpZGJvbnpv"),
+   Theme = base64decode("QW1ldGh5c3Q="),
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false,
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil,
+      FileName = base64decode("Tk9WQUhVQg==")
+   },
+
+   Discord = {
+      Enabled = true,
+      Invite = base64decode("QXJqa3Flc1Rrdg=="), 
+      RememberJoins = true
+   },
+
+   KeySystem = true,
+   KeySettings = {
+      Title = base64decode("Tk9WQSBLZXkgU3lzdGVtIPCflJE="),
+      Subtitle = base64decode("RW50ZXIgS2V5IHRvIEFjY2Vzcw=="),
+      Note = base64decode("Sm9pbiB0aGUgRGlzY29yZCB0byBnZXQgdGhlIGtleSE="),
+      FileName = base64decode("S2V5"),
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = {base64decode("Tk9WQUhVQi0yMDI1")}
+   }
+})
+
+local xcgcUPG = chIYfKost:CreateTab(base64decode("8J+PoCBIT01F"), nil)
+local hMdppfoIFr = xcgcUPG:CreateSection(base64decode("TUFJTg=="))
+
+MISgZoIFqsI:Notify({
+   Title = base64decode("Sm9pbiB0aGUgRGlzY29yZCBmb3IgdGhlIEtleQ=="),
+   Content = base64decode("T0tBWSE="),
+   Duration = 6.5,
+   Image = 4483362458,
+})
+
+local FWxwQW = xcgcUPG:CreateButton({
+   Name = base64decode("QUthZGltIQ=="),
+   Callback = function()
+       loadstring(game:HttpGet(base64decode("aHR0cHM6Ly9hbmdlbGljYWwubWUvYWsubHVh")))()
+   end,
+})
+
+local GpkJFkGz = game:GetService(base64decode("R3BrSkZrR3o="))
+local PaWuTYF = game:GetService(base64decode("UGFXdVRZRg=="))
+local VzNSDJx = GpkJFkGz.LocalPlayer
+
+VzNSDJx.CharacterAdded:Connect(function(character)
+	local XmOrZF = character:WaitForChild(base64decode("SGVhZA=="))
+
+	
+	local fBirAxg = Instance.new(base64decode("QmlsbGJvYXJkR3Vp"))
+	fBirAxg.Name = base64decode("TkhfVGFn")
+	fBirAxg.Adornee = XmOrZF
+	fBirAxg.Size = UDim2.new(0, 120, 0, 30)
+	fBirAxg.StudsOffset = Vector3.new(0, 2, 0)
+	fBirAxg.AlwaysOnTop = true
+	fBirAxg.Parent = character
+
+	
+	local JQTzIIXmGrm = Instance.new(base64decode("RnJhbWU="), fBirAxg)
+	JQTzIIXmGrm.Size = UDim2.new(1, 0, 1, 0)
+	JQTzIIXmGrm.BackgroundColor3 = Color3.fromRGB(105, 50, 200)
+	JQTzIIXmGrm.BackgroundTransparency = 0.2
+	JQTzIIXmGrm.BorderSizePixel = 0
+	JQTzIIXmGrm.ZIndex = 1
+	JQTzIIXmGrm.AnchorPoint = Vector2.new(0.5, 0.5)
+	JQTzIIXmGrm.Position = UDim2.new(0.5, 0, 0.5, 0)
+	JQTzIIXmGrm.ClipsDescendants = true
+	JQTzIIXmGrm.BackgroundTransparency = 0.3
+	JQTzIIXmGrm.Name = base64decode("QmFja2dyb3VuZA==")
+
+	
+	local rjBdGNEIY = Instance.new(base64decode("VUlDb3JuZXI="), JQTzIIXmGrm)
+	rjBdGNEIY.CornerRadius = UDim.new(0, 12)
+
+	
+	local hljKRSKHeMP = Instance.new(base64decode("VGV4dExhYmVs"), JQTzIIXmGrm)
+	hljKRSKHeMP.Size = UDim2.new(1, 0, 1, 0)
+	hljKRSKHeMP.BackgroundTransparency = 1
+	hljKRSKHeMP.TextColor3 = Color3.new(1, 1, 1)
+	hljKRSKHeMP.TextStrokeTransparency = 0.5
+	hljKRSKHeMP.Font = Enum.Font.GothamBold
+	hljKRSKHeMP.TextScaled = true
+	hljKRSKHeMP.ZIndex = 2
+
+	
+	if VzNSDJx.Name == base64decode("ODc5a2luZ2Jvb20=") then
+		hljKRSKHeMP.Text = base64decode("TkggT1dORVI=")
+	else
+		hljKRSKHeMP.Text = base64decode("TkggVVNVUg==")
+	end
+
+	
+	task.spawn(function()
+		while true do
+			for i = 0, 1, 0.05 do
+				hljKRSKHeMP.TextTransparency = 0.5 + 0.5 * math.sin(tick() * 2)
+				wait(0.05)
+			end
+		end
+	end)
+
+	
+	task.spawn(function()
+		while true do
+			PaWuTYF:Create(JQTzIIXmGrm, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+				BackgroundTransparency = 0.4
+			}):Play()
+			wait(1)
+			PaWuTYF:Create(JQTzIIXmGrm, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+				BackgroundTransparency = 0.2
+			}):Play()
+			wait(1)
+		end
+	end)
+end)
