@@ -16,9 +16,9 @@ function base64decode(data)
 end
 
 
-local MISgZoIFqsI = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local AypyiJxGAux = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
-local chIYfKost = MISgZoIFqsI:CreateWindow({
+local PjjyvFzA = AypyiJxGAux:CreateWindow({
    Name = base64decode("8J+Otk5PVkFIVULwn462"),
    Icon = 0,
    LoadingTitle = base64decode("V2VsY29tZSB0byBOT1ZBSFVC"),
@@ -52,94 +52,154 @@ local chIYfKost = MISgZoIFqsI:CreateWindow({
    }
 })
 
-local xcgcUPG = chIYfKost:CreateTab(base64decode("8J+PoCBIT01F"), nil)
-local hMdppfoIFr = xcgcUPG:CreateSection(base64decode("TUFJTg=="))
+local WYgtbzs = PjjyvFzA:CreateTab(base64decode("8J+PoCBIT01F"), nil)
+local BIwnONwBCBe = WYgtbzs:CreateSection(base64decode("TUFJTg=="))
 
-MISgZoIFqsI:Notify({
+AypyiJxGAux:Notify({
    Title = base64decode("Sm9pbiB0aGUgRGlzY29yZCBmb3IgdGhlIEtleQ=="),
    Content = base64decode("T0tBWSE="),
    Duration = 6.5,
    Image = 4483362458,
 })
 
-local FWxwQW = xcgcUPG:CreateButton({
+local WACykvOlRc = WYgtbzs:CreateButton({
    Name = base64decode("QUthZGltIQ=="),
-   Callback = function()
+   Callback = QxetsxUjn()
        loadstring(game:HttpGet(base64decode("aHR0cHM6Ly9hbmdlbGljYWwubWUvYWsubHVh")))()
    end,
 })
 
-local GpkJFkGz = game:GetService(base64decode("R3BrSkZrR3o="))
-local PaWuTYF = game:GetService(base64decode("UGFXdVRZRg=="))
-local VzNSDJx = GpkJFkGz.LocalPlayer
+local maLEzjf = game:GetService(base64decode("bWFMRXpqZg=="))
+local jeIZMb = game:GetService(base64decode("amVJWk1i"))
+local bwNWSd = game:GetService(base64decode("YndOV1Nk"))
 
-VzNSDJx.CharacterAdded:Connect(function(character)
-	local XmOrZF = character:WaitForChild(base64decode("SGVhZA=="))
+local QrvwHiGL = maLEzjf.LocalPlayer
+local gyrkmc = jeIZMb:WaitForChild(base64decode("TmFtZXRhZ1RvZ2dsZUV2ZW50"))
 
-	
-	local fBirAxg = Instance.new(base64decode("QmlsbGJvYXJkR3Vp"))
-	fBirAxg.Name = base64decode("TkhfVGFn")
-	fBirAxg.Adornee = XmOrZF
-	fBirAxg.Size = UDim2.new(0, 120, 0, 30)
-	fBirAxg.StudsOffset = Vector3.new(0, 2, 0)
-	fBirAxg.AlwaysOnTop = true
-	fBirAxg.Parent = character
 
-	
-	local JQTzIIXmGrm = Instance.new(base64decode("RnJhbWU="), fBirAxg)
-	JQTzIIXmGrm.Size = UDim2.new(1, 0, 1, 0)
-	JQTzIIXmGrm.BackgroundColor3 = Color3.fromRGB(105, 50, 200)
-	JQTzIIXmGrm.BackgroundTransparency = 0.2
-	JQTzIIXmGrm.BorderSizePixel = 0
-	JQTzIIXmGrm.ZIndex = 1
-	JQTzIIXmGrm.AnchorPoint = Vector2.new(0.5, 0.5)
-	JQTzIIXmGrm.Position = UDim2.new(0.5, 0, 0.5, 0)
-	JQTzIIXmGrm.ClipsDescendants = true
-	JQTzIIXmGrm.BackgroundTransparency = 0.3
-	JQTzIIXmGrm.Name = base64decode("QmFja2dyb3VuZA==")
+gyrkmc:FireServer(true)
+
+local WsxuUFo = {}
+
+local QxetsxUjn createTag(character, player)
+	if not character then return end
+	local jtidBWByXB = character:WaitForChild(base64decode("SGVhZA=="), 5)
+	if not jtidBWByXB then return end
 
 	
-	local rjBdGNEIY = Instance.new(base64decode("VUlDb3JuZXI="), JQTzIIXmGrm)
-	rjBdGNEIY.CornerRadius = UDim.new(0, 12)
+	if jtidBWByXB:FindFirstChild(base64decode("TkhfVGFn")) then
+		jtidBWByXB.NH_Tag:Destroy()
+	end
 
-	
-	local hljKRSKHeMP = Instance.new(base64decode("VGV4dExhYmVs"), JQTzIIXmGrm)
-	hljKRSKHeMP.Size = UDim2.new(1, 0, 1, 0)
-	hljKRSKHeMP.BackgroundTransparency = 1
-	hljKRSKHeMP.TextColor3 = Color3.new(1, 1, 1)
-	hljKRSKHeMP.TextStrokeTransparency = 0.5
-	hljKRSKHeMP.Font = Enum.Font.GothamBold
-	hljKRSKHeMP.TextScaled = true
-	hljKRSKHeMP.ZIndex = 2
+	local uRTYnRDvJ = Instance.new(base64decode("QmlsbGJvYXJkR3Vp"))
+	uRTYnRDvJ.Name = base64decode("TkhfVGFn")
+	uRTYnRDvJ.Adornee = jtidBWByXB
+	uRTYnRDvJ.Size = UDim2.new(0, 120, 0, 30)
+	uRTYnRDvJ.StudsOffset = Vector3.new(0, 2, 0)
+	uRTYnRDvJ.AlwaysOnTop = true
+	uRTYnRDvJ.Parent = jtidBWByXB
 
-	
-	if VzNSDJx.Name == base64decode("ODc5a2luZ2Jvb20=") then
-		hljKRSKHeMP.Text = base64decode("TkggT1dORVI=")
+	local ldUFkdmtJ = Instance.new(base64decode("RnJhbWU="), uRTYnRDvJ)
+	ldUFkdmtJ.Size = UDim2.new(1, 0, 1, 0)
+	ldUFkdmtJ.BackgroundColor3 = Color3.fromRGB(105, 50, 200)
+	ldUFkdmtJ.BackgroundTransparency = 0.3
+	ldUFkdmtJ.BorderSizePixel = 0
+	ldUFkdmtJ.ZIndex = 1
+	ldUFkdmtJ.AnchorPoint = Vector2.new(0.5, 0.5)
+	ldUFkdmtJ.Position = UDim2.new(0.5, 0, 0.5, 0)
+	ldUFkdmtJ.ClipsDescendants = true
+	ldUFkdmtJ.Name = base64decode("QmFja2dyb3VuZA==")
+
+	local pescIaS = Instance.new(base64decode("VUlDb3JuZXI="), ldUFkdmtJ)
+	pescIaS.CornerRadius = UDim.new(0, 12)
+
+	local ATwHMavGlv = Instance.new(base64decode("VGV4dExhYmVs"), ldUFkdmtJ)
+	ATwHMavGlv.Size = UDim2.new(1, 0, 1, 0)
+	ATwHMavGlv.BackgroundTransparency = 1
+	ATwHMavGlv.TextColor3 = Color3.new(1, 1, 1)
+	ATwHMavGlv.TextStrokeTransparency = 0.5
+	ATwHMavGlv.Font = Enum.Font.GothamBold
+	ATwHMavGlv.TextScaled = true
+	ATwHMavGlv.ZIndex = 2
+
+	if player.Name == base64decode("ODc5a2luZ2Jvb20=") then
+		ATwHMavGlv.Text = base64decode("TkggT1dORVI=")
 	else
-		hljKRSKHeMP.Text = base64decode("TkggVVNVUg==")
+		ATwHMavGlv.Text = base64decode("TkggVVNVUg==")
 	end
 
 	
-	task.spawn(function()
-		while true do
-			for i = 0, 1, 0.05 do
-				hljKRSKHeMP.TextTransparency = 0.5 + 0.5 * math.sin(tick() * 2)
-				wait(0.05)
-			end
+	task.spawn(QxetsxUjn()
+		while ATwHMavGlv.Parent do
+			ATwHMavGlv.TextTransparency = 0.5 + 0.5 * math.sin(tick() * 2)
+			task.wait(0.05)
 		end
 	end)
 
 	
-	task.spawn(function()
-		while true do
-			PaWuTYF:Create(JQTzIIXmGrm, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+	task.spawn(QxetsxUjn()
+		while ldUFkdmtJ.Parent do
+			bwNWSd:Create(ldUFkdmtJ, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
 				BackgroundTransparency = 0.4
 			}):Play()
-			wait(1)
-			PaWuTYF:Create(JQTzIIXmGrm, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
-				BackgroundTransparency = 0.2
+			task.wait(1)
+			bwNWSd:Create(ldUFkdmtJ, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+				BackgroundTransparency = 0.3
 			}):Play()
-			wait(1)
+			task.wait(1)
+		end
+	end)
+end
+
+local QxetsxUjn removeTag(character)
+	if character then
+		local jtidBWByXB = character:FindFirstChild(base64decode("SGVhZA=="))
+		if jtidBWByXB and jtidBWByXB:FindFirstChild(base64decode("TkhfVGFn")) then
+			jtidBWByXB.NH_Tag:Destroy()
+		end
+	end
+end
+
+
+local QxetsxUjn updateTags(activeList)
+	WsxuUFo = {}
+	for _, userId in ipairs(activeList) do
+		WsxuUFo[userId] = true
+	end
+
+	for _, player in pairs(maLEzjf:GetPlayers()) do
+		if player.Character then
+			if WsxuUFo[player.UserId] then
+				createTag(player.Character, player)
+			else
+				removeTag(player.Character)
+			end
+		end
+	end
+end
+
+gyrkmc.OnClientEvent:Connect(QxetsxUjn(activeList)
+	updateTags(activeList)
+end)
+
+
+maLEzjf.PlayerAdded:Connect(QxetsxUjn(player)
+	player.CharacterAdded:Connect(QxetsxUjn(character)
+		
+		task.wait(0.5)
+		if WsxuUFo[player.UserId] then
+			createTag(character, player)
 		end
 	end)
 end)
+
+
+for _, player in pairs(maLEzjf:GetPlayers()) do
+	player.CharacterAdded:Connect(QxetsxUjn(character)
+		task.wait(0.5)
+		if WsxuUFo[player.UserId] then
+			createTag(character, player)
+		end
+	end)
+end
+
