@@ -1,3 +1,127 @@
-script.Parent.MouseButton1Click:Connect(function()
-    player:Kick("You have left the game.")
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "🎶NOVAHUB🎶",
+   Icon = 0,
+   LoadingTitle = "Welcome to NOVAHUB",
+   LoadingSubtitle = "by bandzo/kidbonzo",
+   Theme = "Amethyst",
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false,
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil,
+      FileName = "NOVAHUB"
+   },
+
+   Discord = {
+      Enabled = true,
+      Invite = "ArjkqesTkv", -- Only the code, no "https://discord.gg/"
+      RememberJoins = true
+   },
+
+   KeySystem = true,
+   KeySettings = {
+      Title = "NOVA Key System 🔑",
+      Subtitle = "Enter Key to Access",
+      Note = "Join the Discord to get the key!",
+      FileName = "Key",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = {"NOVAHUB-2025"}
+   }
+})
+
+local homeTab = Window:CreateTab("🏠 HOME", nil)
+local homeSection = homeTab:CreateSection("MAIN")
+
+Rayfield:Notify({
+   Title = "Join the Discord for the Key",
+   Content = "OKAY!",
+   Duration = 6.5,
+   Image = 4483362458,
+})
+
+local Button = homeTab:CreateButton({
+   Name = "AKadim!",
+   Callback = function()
+       loadstring(game:HttpGet("https://angelical.me/ak.lua"))()
+   end,
+})
+
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local player = Players.LocalPlayer
+
+player.CharacterAdded:Connect(function(character)
+	local head = character:WaitForChild("Head")
+
+	-- Billboard GUI Setup
+	local tagGui = Instance.new("BillboardGui")
+	tagGui.Name = "NH_Tag"
+	tagGui.Adornee = head
+	tagGui.Size = UDim2.new(0, 120, 0, 30)
+	tagGui.StudsOffset = Vector3.new(0, 2, 0)
+	tagGui.AlwaysOnTop = true
+	tagGui.Parent = character
+
+	-- Background Frame
+	local bg = Instance.new("Frame", tagGui)
+	bg.Size = UDim2.new(1, 0, 1, 0)
+	bg.BackgroundColor3 = Color3.fromRGB(105, 50, 200)
+	bg.BackgroundTransparency = 0.2
+	bg.BorderSizePixel = 0
+	bg.ZIndex = 1
+	bg.AnchorPoint = Vector2.new(0.5, 0.5)
+	bg.Position = UDim2.new(0.5, 0, 0.5, 0)
+	bg.ClipsDescendants = true
+	bg.BackgroundTransparency = 0.3
+	bg.Name = "Background"
+
+	-- Rounded Corners
+	local corner = Instance.new("UICorner", bg)
+	corner.CornerRadius = UDim.new(0, 12)
+
+	-- Text Label
+	local text = Instance.new("TextLabel", bg)
+	text.Size = UDim2.new(1, 0, 1, 0)
+	text.BackgroundTransparency = 1
+	text.TextColor3 = Color3.new(1, 1, 1)
+	text.TextStrokeTransparency = 0.5
+	text.Font = Enum.Font.GothamBold
+	text.TextScaled = true
+	text.ZIndex = 2
+
+	-- Set Text Based on Player
+	if player.Name == "879kingboom" then
+		text.Text = "NH OWNER"
+	else
+		text.Text = "NH USUR"
+	end
+
+	-- Text Animation (wave effect)
+	task.spawn(function()
+		while true do
+			for i = 0, 1, 0.05 do
+				text.TextTransparency = 0.5 + 0.5 * math.sin(tick() * 2)
+				wait(0.05)
+			end
+		end
+	end)
+
+	-- Background Pulse Animation
+	task.spawn(function()
+		while true do
+			TweenService:Create(bg, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+				BackgroundTransparency = 0.4
+			}):Play()
+			wait(1)
+			TweenService:Create(bg, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+				BackgroundTransparency = 0.2
+			}):Play()
+			wait(1)
+		end
+	end)
 end)
